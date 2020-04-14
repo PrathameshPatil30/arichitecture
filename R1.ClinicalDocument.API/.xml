@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>R1.ClinicalDocument.API</name>
+    </assembly>
+    <members>
+        <member name="T:R1.ClinicalDocument.API.Controllers.V1.ClinicalDocumentController">
+            <summary>
+            ClinicalDocumentController
+            </summary>
+        </member>
+        <member name="F:R1.ClinicalDocument.API.Controllers.V1.ClinicalDocumentController._iClinicalDocumentBusinessLogic">
+            <summary>
+            Private property for injecting dependency IClinicalDocumentBusinessLogic interface
+            </summary>
+        </member>
+        <member name="F:R1.ClinicalDocument.API.Controllers.V1.ClinicalDocumentController._iMapper">
+            <summary>
+            Private property for injecting dependency mapper interface
+            </summary>
+        </member>
+        <member name="M:R1.ClinicalDocument.API.Controllers.V1.ClinicalDocumentController.#ctor(BusinessLogic.Abstraction.ClinicalDocument.IClinicalDocumentBusinessLogic,AutoMapper.IMapper)">
+            <summary>
+            Constructor for initializing private properties
+            </summary>
+        </member>
+        <member name="M:R1.ClinicalDocument.API.Controllers.V1.ClinicalDocumentController.SaveClinicaldetails(Contract.CliniclaDocument.Request.DocumentDetailRequest)">
+            <summary>
+            Save clinical details to database 
+            </summary>
+            <param name="documentDetailRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="T:R1.ClinicalDocument.API.Extensions.ModelStateExtension">
+            <summary>
+            ModelStateExtension
+            </summary>
+        </member>
+        <member name="M:R1.ClinicalDocument.API.Extensions.ModelStateExtension.ToValidationResultModel(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String)">
+            <summary>
+            The method would validate the resultant model 
+            </summary>
+            <param name="modelState">The model state</param>
+            <param name="errorMessage">The error message to be thrown if validation fails</param>
+        </member>
+        <member name="M:R1.ClinicalDocument.API.Extensions.ModelStateExtension.ToValidationResults(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry,System.String)">
+            <summary>
+            The method would iterate through the errors and process it in the required format 
+            </summary>
+            <param name="modelStateEntry">The model state entry</param>
+            <param name="key">The key depicting on whichkey the error is thrown</param>
+        </member>
+        <member name="M:R1.ClinicalDocument.API.Extensions.ModelStateExtension.ClearModelError(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String,System.Boolean)">
+            <summary>
+            The method would clear all the model errors
+            </summary>
+            <param name="modelState">The model state</param>
+            <param name="keyName">The key name</param>
+            <param name="exactMatch">The exact match of the error</param>
+        </member>
+        <member name="M:R1.ClinicalDocument.API.Extensions.ModelStateExtension.ClearModelErrors(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String)">
+            <summary>
+            The method would iterate through the errors
+            </summary>
+            <param name="modelState">The model state</param>
+            <param name="prefix">The prefix to be used</param>
+        </member>
+        <member name="T:R1.ClinicalDocument.API.Extensions.ServiceSwaggerExtensions">
+            <summary>
+            Swagger Service extension class
+            </summary>
+        </member>
+        <member name="M:R1.ClinicalDocument.API.Extensions.ServiceSwaggerExtensions.AddSwaggerGenerator(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            Swagger configurations
+            </summary>
+            <param name="services"></param>
+            <param name="env"></param>
+            <returns></returns>
+        </member>
+        <member name="M:R1.ClinicalDocument.API.Extensions.ServiceSwaggerExtensions.IncludeXmlDocument(Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions)">
+            <summary>
+            Swagger documentation XML document
+            </summary>
+            <param name="c"></param>
+        </member>
+        <member name="M:R1.ClinicalDocument.API.Extensions.ServiceSwaggerExtensions.IsTestHost(Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            Creation of test host for swagger extension
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:R1.ClinicalDocument.API.Extensions.ServiceSwaggerExtensions.GetAssemblyName">
+            <summary>
+            To get assembly name
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:R1.ClinicalDocument.API.Mappings.ContractAndModelMapping">
+            <summary>
+            Contract Model Mapping
+            </summary>
+        </member>
+        <member name="M:R1.ClinicalDocument.API.Mappings.ContractAndModelMapping.#ctor">
+            <summary>
+            Constructor Contract Model Mapping
+            </summary>
+        </member>
+        <member name="T:R1.ClinicalDocument.API.Middleware.ExceptionHandlerMiddleware">
+            <summary>
+            ExceptionHandlerMiddleware
+            </summary>
+        </member>
+        <member name="T:R1.ClinicalDocument.API.Program">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:R1.ClinicalDocument.API.Program.Main(System.String[])">
+            <summary>
+            Main method
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:R1.ClinicalDocument.API.Program.CreateWebHostBuilder(System.String[])">
+            <summary>
+            Create Web HostBuilder
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:R1.ClinicalDocument.API.Startup">
+            <summary>
+            Start Up 
+            </summary>
+        </member>
+        <member name="M:R1.ClinicalDocument.API.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="configuration"></param>
+            <param name="env"></param>
+        </member>
+        <member name="P:R1.ClinicalDocument.API.Startup.Configuration">
+            <summary>
+            Configuration
+            </summary>
+        </member>
+        <member name="P:R1.ClinicalDocument.API.Startup.Environment">
+            <summary>
+            hosting environment
+            </summary>
+        </member>
+        <member name="M:R1.ClinicalDocument.API.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configure Services
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:R1.ClinicalDocument.API.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            Configure
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>

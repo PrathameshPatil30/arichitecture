@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CoverageParams>
+	<TargetArguments>test R1.ClinicalDocumentAPI.sln</TargetArguments>
+	<TargetWorkingDir>.</TargetWorkingDir>
+	<ReportType>html</ReportType>
+	<!--<TempDir></TempDir>-->
+	<Output>clinicalDocumentAPI-coverage-report.html</Output>
+	<!--<InheritConsole></InheritConsole>-->
+	<!--<AnalyzeTargetArguments><AnalyzeTargetArguments>-->
+	<!-- Remove specified files from report. Ant-style patterns are supported here.
+	<ExcludeFileMasks>
+		<Mask>ProjectFolder/**/*.generated.cs</Mask>
+		<Mask>ProjectFolder/**/*.tmp.cs</Mask>
+	</ExcludeFileMasks>
+	-->
+	<!-- Allows including not loaded assemblies in the specified scope into coverage results. Ant-style patterns are supported here.
+	<Scope>
+		<ScopeEntry>ProjectFolder/**/*.dll</ScopeEntry>
+		<ScopeEntry>ProjectFolder/**/*.exe</ScopeEntry>
+	</Scope>
+	-->
+	<Filters>
+		<ExcludeFilters>
+			<FilterEntry>
+				<ModuleMask>*.UnitTests</ModuleMask>
+			</FilterEntry>
+			<FilterEntry>
+				<ModuleMask>*.IntegrationTests</ModuleMask>
+			</FilterEntry>
+			<FilterEntry>
+				<ModuleMask>*.EndToEndTests</ModuleMask>
+			</FilterEntry>
+			<FilterEntry>
+				<ModuleMask>*.Mock</ModuleMask>
+			</FilterEntry>
+			<FilterEntry>
+				<ModuleMask>*.MockAssembly</ModuleMask>
+			</FilterEntry>
+			<FilterEntry>
+				<ModuleMask>BouncyCastle.Crypto</ModuleMask>
+			</FilterEntry>
+			<FilterEntry>
+				<ModuleMask>xunit.assert</ModuleMask>
+			</FilterEntry>
+			<FilterEntry>
+				<ModuleMask>FluentValidation</ModuleMask>
+			</FilterEntry>
+			<!--<FilterEntry>
+				<ClassMask>AutoMapper*</ClassMask>
+			</FilterEntry>-->
+		</ExcludeFilters>
+	</Filters>
+	<!-- Attribute filters. It's possible to use asterisks as wildcard symbols.
+	<AttributeFilters>
+		<AttributeFilterEntry> Attribute class mask </AttributeFilterEntry>
+		<AttributeFilterEntry>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute</AttributeFilterEntry>
+	</AttributeFilters>
+	-->
+	<!-- Process Filters. It's possible to use asterisks as wildcard symbols.
+	<ProcessFilters>
+		<IncludeFilters>
+			<ProcessMask>SampleProcess*</ProcessMask>
+		</IncludeFilters>
+		<ExcludeFilters>
+			<ProcessMask>SampleProcess.exe</ProcessMask>
+		</ExcludeFilters>
+	</ProcessFilters>
+	-->
+</CoverageParams>

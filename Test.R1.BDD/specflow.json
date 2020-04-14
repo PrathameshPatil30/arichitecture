@@ -1,0 +1,13 @@
+﻿{
+  "language": {
+    "feature": "en-US",
+    "tool": "SpecFlow.Tools.MSBuild.Generation"
+  },
+  "unitTestProvider": {
+    "name": "SpecFlow.xUnit",
+    "generatorProvider": "TechTalk.SpecFlow"
+  },
+  "generator": {
+    "allowDebugGeneratedFiles": true
+  }
+}

@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Businesslogic.Abstraction.ClinicalDocument\BusinessLogic.Abstraction.ClinicalDocument.csproj" />
+    <ProjectReference Include="..\Database.Abstraction.ClinicalDocument\Database.Abstraction.ClinicalDocument.csproj" />
+    <ProjectReference Include="..\Resources\Resources.csproj" />
+    <ProjectReference Include="..\Services.Contract\Services.Contract.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.Extensions.Localization.Abstractions">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.localization.abstractions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Localization.Abstractions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

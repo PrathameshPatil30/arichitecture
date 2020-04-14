@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Microsoft.CodeCoverage" Version="16.5.0" />
+    <PackageReference Include="Moq" Version="4.13.1" />
+    <PackageReference Include="xunit" Version="2.4.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Businesslogic.ClinicalDocument\BusinessLogic.ClinicalDocument.csproj" />
+    <ProjectReference Include="..\Database.Abstraction.ClinicalDocument\Database.Abstraction.ClinicalDocument.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Businesslogic.ClinicalDocument\BusinessLogic.ClinicalDocument.csproj" />
+    <ProjectReference Include="..\Database.Abstraction.ClinicalDocument\Database.Abstraction.ClinicalDocument.csproj" />
+    <ProjectReference Include="..\Database.ClinicalDocument.Entities\Database.ClinicalDocument.Entities.csproj" />
+    <ProjectReference Include="..\Database.ClinicalDocument\Database.ClinicalDocument.csproj" />
+  </ItemGroup>
+
+</Project>
